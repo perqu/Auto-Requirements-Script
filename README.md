@@ -49,28 +49,10 @@ Python script allowing for quickly entering the necessary requirements into the 
 By using "reqs.py", the program will execute "pip freeze > requirements.txt".
 However, when using "reqs.py template", the program will open the reqs-template.txt file and based on the library names entered there, it will trace pip freeze and save libraries with the right versions.
 
-Without template:
-
-1. Run the following command:
-
-'''powershell
-reqs.py
-'''
-
-Using the template:
-
-1. Open the reqs-template.txt file.
-2. Enter the names of the libraries you want to include in the requirements.txt file, each on a new line.
-3. Save the changes to the reqs-template.txt file.
-4. Run the following command:
-   '''powershell
-   reqs.py template
-   '''
-
 ## :sparkles: Features
 
-:heavy_check_mark: reqs.py;\
-:heavy_check_mark: reqs.py template;
+:heavy_check_mark: reqs.py\
+:heavy_check_mark: reqs.py template
 
 ## :rocket: Technologies
 
@@ -92,7 +74,23 @@ $ git clone https://github.com/perqu/auto-requirements-script
 Copy script to PATH
 
 # Run the project
-$ reqs.py
+Without template:
+
+1. Run the following command:
+
+'''bash
+reqs.py
+'''
+
+Using the template:
+
+1. Open the reqs-template.txt file.
+2. Enter the names of the libraries you want to include in the requirements.txt file, each on a new line.
+3. Save the changes to the reqs-template.txt file.
+4. Run the following command:
+   '''bash
+   reqs.py template
+   '''
 
 ```
 
